@@ -28,19 +28,19 @@
                         <input type="name" name="email" id="email" placeholder="Name" class="block w-full p-4 text-lg rounded-sm bg-black">
                     </div>
                     <div class="pb-2 pt-3">
-                        <input type="phone_no" name="email" id="email" placeholder="Phone Number" class="block w-full p-4 text-lg rounded-sm bg-black">
+                        <input type="name" name="phone_no" id="phone_no" placeholder="Phone Number" class="block w-full p-4 text-lg rounded-sm bg-black">
                     </div>
                     <div class="pb-2 pt-3">
-                        <input type="time_in" name="email" id="email" placeholder="Time in" class="block w-full p-4 text-lg rounded-sm bg-black">
+                        <input type="time" name="time_in" id="time_in" placeholder="Time in" class="block w-full p-4 text-lg rounded-sm bg-black">
                     </div>
                     <div class="pb-2 pt-3">
-                        <input type="amount_paid" name="email" id="email" placeholder="Amount Paid" class="block w-full p-4 text-lg rounded-sm bg-black">
+                        <input type="name" name="amount_paid" id="amount_paid" placeholder="Amount Paid" class="block w-full p-4 text-lg rounded-sm bg-black">
                     </div>
                     <div class="pb-2 pt-3">
-                        <input type="location" name="email" id="email" placeholder="Location" class="block w-full p-4 text-lg rounded-sm bg-black">
+                        <input type="name" name="location" id="location" placeholder="Location" class="block w-full p-4 text-lg rounded-sm bg-black">
                     </div>
                     <div class="pb-2 pt-3">
-                        <input type="number_plate" name="email" id="email" placeholder="Number" class="block w-full p-4 text-lg rounded-sm bg-black">
+                        <input type="name" name="number_plate" id="number_plate" placeholder="Number" class="block w-full p-4 text-lg rounded-sm bg-black">
                     </div>
                     <div class="px-4 pb-2 pt-3">
                         <button class="uppercase block w-full p-4 text-lg rounded-full bg-indigo-500 hover:bg-indigo-600 focus:outline-none">submit</button>
@@ -65,6 +65,8 @@
 
 <script>
     export default {
+       
+
         
     }
 </script>
