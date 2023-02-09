@@ -23,28 +23,28 @@
                 <div class="absolute bg-black opacity-60 inset-0 z-0"></div>
             </div>
             <div class="w-full py-6 z-20">
-                <form accept-charset="UTF-8" v-on:submit.prevent="onSubmit()" action="https://script.google.com/macros/s/AKfycbxEyS7uiw4ULhpqjw6tw4_njU4pJR6SuPJhKIInz4rX2KkWiHYEYKr6wQdGjv9ihAiLqA/exec" method="POST" class="sm:w-2/3 w-full px-4 lg:px-0 mx-auto">
+                <form action="https://script.google.com/macros/s/AKfycbxEyS7uiw4ULhpqjw6tw4_njU4pJR6SuPJhKIInz4rX2KkWiHYEYKr6wQdGjv9ihAiLqA/exec" method="POST" class="sm:w-2/3 w-full px-4 lg:px-0 mx-auto">
                     <div class="pb-2 pt-3">
-                        <input type="text" v-model="name" required="required" name="Name" id="name" placeholder="Name" class="form-control block w-full p-3 text-lg rounded-sm bg-black">
+                        <input type="text" required="required" name="Name" id="name" placeholder="Name" class="form-control block w-full p-3 text-lg rounded-sm bg-black">
                     </div>
                     <div class="pb-2 pt-3">
-                        <input type="text" v-model="phone" required="required" name="Phone" id="phone_no" placeholder="Phone Number" class="form-control block w-full p-3 text-lg rounded-sm bg-black">
+                        <input type="text" required="required" name="Phone" id="phone_no" placeholder="Phone Number" class="form-control block w-full p-3 text-lg rounded-sm bg-black">
                     </div>
                     <div class="pb-2 pt-3">
-                        <input type="time" v-model="time" required="required" name="Time_in" id="time_in" placeholder="Time in" class="form-control block w-full p-3 text-lg rounded-sm bg-black">
+                        <input type="time" required="required" name="Time_in" id="time_in" placeholder="Time in" class="form-control block w-full p-3 text-lg rounded-sm bg-black">
                     </div>
                     <div class="pb-2 pt-3">
-                        <input type="date" v-model="date" required="required" name="Date" id="date" placeholder="Date" class="form-control block w-full p-3 text-lg rounded-sm bg-black">
+                        <input type="date" required="required" name="Date" id="date" placeholder="Date" class="form-control block w-full p-3 text-lg rounded-sm bg-black">
                     </div>
 
                     <div class="pb-2 pt-3">
-                        <input type="currency" v-model="amount" required="required" name="Amount_Paid" id="amount_paid" placeholder="Amount Paid" class="form-control block w-full p-3 text-lg rounded-sm bg-black">
+                        <input type="currency" required="required" name="Amount_Paid" id="amount_paid" placeholder="Amount Paid" class="form-control block w-full p-3 text-lg rounded-sm bg-black">
                     </div>
                     <div class="pb-2 pt-3">
-                        <input type="text" v-model="location" required="required" name="Location" id="location" placeholder="Location" class="form-control block w-full p-3 text-lg rounded-sm bg-black">
+                        <input type="text" required="required" name="Location" id="location" placeholder="Location" class="form-control block w-full p-3 text-lg rounded-sm bg-black">
                     </div>
                     <div class="pb-2 pt-3">
-                        <input type="text" v-model="number" required="required" name="N_plate" id="number_plate" placeholder="Number Plate" class="form-control block w-full p-3 text-lg rounded-sm bg-black">
+                        <input type="text" required="required" name="N_plate" id="number_plate" placeholder="Number Plate" class="form-control block w-full p-3 text-lg rounded-sm bg-black">
                     </div>
                     <div class="px-4 pb-2 pt-3">
                         <div class="success" v-if="isSuccess">We received your submission, thank you!</div>
