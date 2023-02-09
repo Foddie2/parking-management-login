@@ -23,9 +23,6 @@
                 <div class="absolute bg-black opacity-60 inset-0 z-0"></div>
             </div>
             <div class="w-full py-6 z-20">
-
-
-
                 <form accept-charset="UTF-8" v-on:submit.prevent="onSubmit()" method="POST" action="https://script.google.com/macros/s/AKfycbxEyS7uiw4ULhpqjw6tw4_njU4pJR6SuPJhKIInz4rX2KkWiHYEYKr6wQdGjv9ihAiLqA/exec" class="sm:w-2/3 w-full px-4 lg:px-0 mx-auto">
                     <div class="pb-2 pt-3">
                         <input type="text" v-model="name" required="required" name="Name" id="name" placeholder="Name" class="form-control block w-full p-4 text-lg rounded-sm bg-black">
@@ -80,7 +77,7 @@ export default {
   name: "Contact",
   props: {
     msg: String
-  },
+  }, 
   data() {
     return {
       loading: true,
