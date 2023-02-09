@@ -31,20 +31,20 @@
                         <input type="text" v-model="phone" required="required" name="Phone" id="phone_no" placeholder="Phone Number" class="form-control block w-full p-3 text-lg rounded-sm bg-black">
                     </div>
                     <div class="pb-2 pt-3">
-                        <input type="text" v-model="time" required="required" name="Time_in" id="time_in" placeholder="Time in" class="form-control block w-full p-3 text-lg rounded-sm bg-black">
+                        <input type="time" v-model="time" required="required" name="Time_in" id="time_in" placeholder="Time in" class="form-control block w-full p-3 text-lg rounded-sm bg-black">
                     </div>
                     <div class="pb-2 pt-3">
-                        <input type="text" v-model="date" required="required" name="Date" id="date" placeholder="Date" class="form-control block w-full p-3 text-lg rounded-sm bg-black">
+                        <input type="date" v-model="date" required="required" name="Date" id="date" placeholder="Date" class="form-control block w-full p-3 text-lg rounded-sm bg-black">
                     </div>
 
                     <div class="pb-2 pt-3">
-                        <input type="text" v-model="amount" required="required" name="Amount_Paid" id="amount_paid" placeholder="Amount Paid" class="form-control block w-full p-3 text-lg rounded-sm bg-black">
+                        <input type="currency" v-model="amount" required="required" name="Amount_Paid" id="amount_paid" placeholder="Amount Paid" class="form-control block w-full p-3 text-lg rounded-sm bg-black">
                     </div>
                     <div class="pb-2 pt-3">
                         <input type="text" v-model="location" required="required" name="Location" id="location" placeholder="Location" class="form-control block w-full p-3 text-lg rounded-sm bg-black">
                     </div>
                     <div class="pb-2 pt-3">
-                        <input type="text" v-model="number" required="required" name="N_plate" id="number_plate" placeholder="Number" class="form-control block w-full p-3 text-lg rounded-sm bg-black">
+                        <input type="text" v-model="number" required="required" name="N_plate" id="number_plate" placeholder="Number Plate" class="form-control block w-full p-3 text-lg rounded-sm bg-black">
                     </div>
                     <div class="px-4 pb-2 pt-3">
                         <div class="success" v-if="isSuccess">We received your submission, thank you!</div>
