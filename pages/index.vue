@@ -28,30 +28,30 @@
 
                 <form accept-charset="UTF-8" v-on:submit.prevent="onSubmit()" method="POST" action="https://script.google.com/macros/s/AKfycbxEyS7uiw4ULhpqjw6tw4_njU4pJR6SuPJhKIInz4rX2KkWiHYEYKr6wQdGjv9ihAiLqA/exec" class="sm:w-2/3 w-full px-4 lg:px-0 mx-auto">
                     <div class="pb-2 pt-3">
-                        <input type="text" v-model="email" name="Name" id="email" placeholder="Name" class="form-control block w-full p-4 text-lg rounded-sm bg-black">
+                        <input type="text" v-model="name" required="required" name="Name" id="name" placeholder="Name" class="form-control block w-full p-4 text-lg rounded-sm bg-black">
                     </div>
                     <div class="pb-2 pt-3">
-                        <input type="text" v-model="phone" required="required" name="Phone" id="phone_no" placeholder="Phone Number" class="form-control block w-full p-4 text-lg rounded-sm bg-black">
+                        <input type="text" v-model="phone" required="required" name="Phone" id="phone_no" placeholder="Phone Number" class="form-control block w-full p-3 text-lg rounded-sm bg-black">
                     </div>
                     <div class="pb-2 pt-3">
-                        <input type="time" v-model="time" required="required" name="Time_in" id="time_in" placeholder="Time in" class="form-control block w-full p-4 text-lg rounded-sm bg-black">
+                        <input type="text" v-model="time" required="required" name="Time_in" id="time_in" placeholder="Time in" class="form-control block w-full p-3 text-lg rounded-sm bg-black">
                     </div>
                     <div class="pb-2 pt-3">
-                        <input type="time" v-model="date" required="required" name="Date" id="date" placeholder="Date" class="form-control block w-full p-4 text-lg rounded-sm bg-black">
+                        <input type="text" v-model="date" required="required" name="Date" id="date" placeholder="Date" class="form-control block w-full p-3 text-lg rounded-sm bg-black">
                     </div>
 
                     <div class="pb-2 pt-3">
-                        <input type="text" v-model="text" required="required" name="Amount_Paid" id="amount_paid" placeholder="Amount Paid" class="form-control block w-full p-4 text-lg rounded-sm bg-black">
+                        <input type="text" v-model="amount" required="required" name="Amount_Paid" id="amount_paid" placeholder="Amount Paid" class="form-control block w-full p-3 text-lg rounded-sm bg-black">
                     </div>
                     <div class="pb-2 pt-3">
-                        <input type="text" v-model="text" required="required" name="Location" id="location" placeholder="Location" class="form-control block w-full p-4 text-lg rounded-sm bg-black">
+                        <input type="text" v-model="location" required="required" name="Location" id="location" placeholder="Location" class="form-control block w-full p-3 text-lg rounded-sm bg-black">
                     </div>
                     <div class="pb-2 pt-3">
-                        <input type="text" v-model="text" required="required" name="N_plate" id="number_plate" placeholder="Number" class="form-control block w-full p-4 text-lg rounded-sm bg-black">
+                        <input type="text" v-model="number" required="required" name="N_plate" id="number_plate" placeholder="Number" class="form-control block w-full p-3 text-lg rounded-sm bg-black">
                     </div>
                     <div class="px-4 pb-2 pt-3">
                         <div class="success" v-if="isSuccess">We received your submission, thank you!</div>
-                        <button type="submit" class="uppercase block w-full p-4 text-lg rounded-full bg-indigo-500 hover:bg-indigo-600 focus:outline-none">submit</button>
+                        <button type="submit" class="uppercase block w-full p-3 text-lg rounded-full bg-indigo-500 hover:bg-indigo-600 focus:outline-none">submit</button>
                     </div>
 
                     <div class="p-4 text-center right-0 left-0 flex justify-center space-x-4 mt-16 lg:hidden ">
@@ -66,62 +66,6 @@
                         </a>
                     </div>
                 </form>
-
-
-
-<!-- 
-
-                <div>
-                    <div>
-                      <form
-                     xxxxxxxxx
-                      >
-                        <div>
-                          <label>Email address</label>
-                          <input
-                            type="email"
-                            v-model="email"
-                            class="form-control"
-                            placeholder="Email"
-                          >
-                        </div>
-                        <div>
-                          <label>Name</label>
-                          <input
-                            type="text"
-                            v-model="name"
-                            class="form-control"
-                            placeholder="Name"
-                            required="required"
-                          >
-                        </div>
-                        <div>
-                          <label>Message</label>
-                          <textarea
-                            type="text"
-                            v-model="message"
-                            class="form-control"
-                            placeholder="Message"
-                            required="required"
-                          ></textarea>
-                        </div>
-                        <hr>
-                        <div class="success" v-if="isSuccess">We received your submission, thank you!</div>
-                        <button type="submit">Submit</button>
-                      </form>
-                    </div>
-                  </div> -->
-
-
-
-
-
-
-
-
-
-
-
             </div>
         </div>
     </section>
@@ -141,18 +85,26 @@ export default {
     return {
       loading: true,
       name: "",
-      email: "",
-      
-
+      phone: "",
+      time: "",
+      date:"",
+      amount:"",
+      location:"",
+      number:"",
       isSuccess: false
     };
   },
   methods: {
     onSubmit() {
       let data = {
-        name: this.name,
-        email: this.email,
-        message: this.message
+        Name: this.name,
+        Phone: this.phone,
+        Time_in: this.time,
+        Date: this.date,
+        Amount_Paid: this.amount,
+        Location: this.location,
+        N_plate: this.number,
+        
       };
       axios
         .post("", data, {
@@ -171,8 +123,10 @@ export default {
     }
   }
 };
+
+
 </script>
 
-<style lang="scss" scoped>
+<style >
 
 </style>
