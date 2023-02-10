@@ -15,3 +15,9 @@ export default defineNuxtConfig({
     '@nuxtjs/pwa',
   ]
 }
+
+{
+  pwa: {
+    icon: false // disables the icon module
+  }
+}
