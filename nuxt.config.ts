@@ -8,16 +8,27 @@ export default defineNuxtConfig({
         },
       },
 
+      modules: [
+        '@kevinmarrec/nuxt-pwa'
+      ],
+
+  pwa: {
+    workbox: {
+      enabled: true
+    }
+  }
+
 })
 
-{
-  buildModules: [
-    '@nuxtjs/pwa',
-  ]
-}
+// {
+//   buildModules: [
+//     '@nuxtjs/pwa',
+//   ]
+// }
 
-{
-  pwa: {
-    icon: false // disables the icon module
-  }
-}
+// {
+//   pwa: {
+//     icon: false // disables the icon module
+//   }
+// }
+

@@ -74,6 +74,20 @@
 import axios from "axios";
 
 export default {
+  head() {
+        return {
+            title: "Home",
+            meta: [
+                {
+                    hid: "description",
+                    name: "description",
+                    content: "Home"
+                }
+            ]
+        };
+    },
+
+
   name: "Contact",
   props: {
     msg: String
