@@ -30,16 +30,3 @@ export default defineNuxtConfig({
   }
 
 })
-
-// {
-//   buildModules: [
-//     '@nuxtjs/pwa',
-//   ]
-// }
-
-// {
-//   pwa: {
-//     icon: false // disables the icon module
-//   }
-// }
-
